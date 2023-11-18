@@ -1,41 +1,59 @@
-# Project Title
+# Degen Token Project
 
-Simple overview of use/purpose.
+Simple overview of the Degen Token Project
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+DegenToken is implemented as a solidity smart onctract using the ERC-20 Standard that is also featured in the previous modules of the course.
 
-## Getting Started
+## Features
 
-### Installing
+1. **Token Creation**
+    - Only the owner can create the tokens.
+      
+2. **Token Transferring**
+    - Both the owner and the recipient can transfer tokens.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+3. **Token Burning**
+    - Both can burn tokens when those tokens are also unused.
 
-### Executing program
+4. **In-Game Item Purchasing using Tokens**
+    - Can display the list that are available for purchasing
+    - Users can buy those items with the use of their tokens via burning. 
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+### Smart Contract Details
 
-## Help
+- **Token Name:** Degen
+- **Token Symbol:** DGN
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+
+### Functions
+
+1. **createTokens(address to, uint256 amount):**
+   - Creates new tokens and distributes them to the specified address. (Owner only)
+
+2. **transferTokens(address recipient, uint256 amount):**
+   - Transfers a specified amount of tokens to the recipient.
+
+3. **burnTokens(uint256 amount):**
+   - Burns a specified amount of tokens, reducing the total supply.
+
+4. **showGameStoreItems():**
+   - Returns a list of virtual items available in the in-game store.
+
+5. **getBalance():**
+   - Returns the token balance of the caller.
+
+6. **getOwnerAddress():**
+   - Returns the address of the contract owner.
+
+7. **purchaseNFTItem(uint256 itemNumber):**
+   - Allows users to purchase virtual items from the in-game store by burning tokens.
+
 
 ## Authors
 
-Contributors names and contact info
+Contributor name and Contact Info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+Stephen Camilon
+(https://github.com/Stephencamilon)
